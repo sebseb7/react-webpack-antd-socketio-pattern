@@ -1,0 +1,31 @@
+{
+	"parser": "@babel/eslint-parser",
+	"env": {
+		"browser": true,
+		"commonjs": true,
+		"es6": true,
+		"node": false
+	},
+	"rules": {
+		"react/prop-types": "off"
+	},
+	"parserOptions": {
+		"requireConfigFile": false,
+		"babelOptions": {
+			"presets": ["@babel/preset-react"]
+		}
+	},
+	"plugins": [
+		"react"
+	],
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:react/jsx-runtime"
+	],
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	}
+}
